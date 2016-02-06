@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Show App Version -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="18pt">
+	
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="5pt"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/version_title"
+        android:textColor="@drawable/orange"
+        android:textSize="9pt" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20pt"
+        android:text="" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/version"
+        android:textColor="@drawable/blue"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="15pt"
+        android:text=""
+        android:textColor="#212121"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/version_info_1"
+        android:textColor="#212121"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2pt"
+        android:text=""
+        android:textColor="#212121"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/version_info_2"
+        android:textColor="#212121"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2pt"
+        android:text=""
+        android:textColor="#212121"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/version_info_3"
+        android:textColor="#212121"/>    
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="15pt"
+        android:text=""
+        android:textColor="#212121"/>      
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/contact_us"
+        android:textColor="#212121"/>
+	   
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/website"
+        android:textColor="@drawable/orange"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="15pt"
+        android:text=""
+        android:textColor="#212121"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/version_copyright"
+        android:textColor="@drawable/blue"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/version_all_rights_reserved"
+        android:textColor="@drawable/blue"/>
+</LinearLayout>

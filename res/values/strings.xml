@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BIKE RULES</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Main Menu -->
+    <string name="left_handle_bar">Left Handle Bar</string>
+    <string name="right_handle_bar">Right Handle Bar</string>    
+    <string name="instruction_1">-Click the handle bar icon to test the device</string>      
+    <string name="instruction_2">-To connect to the handle bar, click on the button above. It will connect to the deivce automatically</string>        
+    <string name="instruction_3">-To disconnect to the handle bar, click on the button above again. It will disconnect to the deivce automatically</string>     
+    
+    <!-- Version Information -->
+    <string name="version_title">Version</string>
+    <string name="version">BIKE RULES V1.0</string>
+    <string name="version_info_1">Copyright belongs to Bike Rules,</string>
+    <string name="version_info_2">shall not be reproduced, copied</string>
+    <string name="version_info_3">or used in other ways without permission</string>
+    <string name="author">Author:James Ren</string>
+    <string name="contact_us">Contact us please visit</string>
+    <string name="website">www.bikerules.co</string>
+    <string name="version_copyright">©Copyright 2014 BIKE RULES</string>
+    <string name="version_all_rights_reserved">All rights reserved</string>
+
+</resources>

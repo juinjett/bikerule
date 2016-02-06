@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cycling.assistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+    
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	
+	<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+	
+    <application
+        android:name="com.cycling.assistant.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cycling.assistant.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ConnectionActivity"
+	          android:launchMode="singleTask"></activity>
+		<activity android:name=".MapDisplayActivity"
+	          android:launchMode="singleTask"></activity>
+		<activity android:name=".VersionShowActivity"
+	          android:launchMode="singleTask"></activity>
+		<activity android:name=".HealthDataActivity"
+	          android:launchMode="singleTask"></activity>        
+		
+		<service  
+   			android:name=".BluetoothService"  
+   			android:exported="false"
+    		android:enabled="true" >  
+                <intent-filter>  
+        	        <action android:name=".BluetoothService" />  
+                </intent-filter>  
+        </service> 
+		
+		<receiver 
+		    android:name=".commandReceiver" 
+		    android:exported="false" >  
+                <intent-filter>  
+                    <action android:name="com.cycling.assistant" />   
+                </intent-filter>  
+    	</receiver>  
+		
+		<meta-data
+    		android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyBhuzziOHe_z-BVM5RcbV8rrjUrTU8wU64"/>
+	    <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+    
+</manifest>
